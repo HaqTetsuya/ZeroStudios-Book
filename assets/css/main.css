@@ -1,0 +1,35 @@
+body{
+    margin: auto;
+    padding: auto;
+    background-color: #f5e9d4;
+}
+
+.login-form{
+    padding: 14px;
+    background-color: white;
+    border-radius: 10px;
+    border-color: #320358;
+    border-style: solid;
+}
+
+.login-form .form-group{
+    padding-bottom: 14px;
+}
+
+.navbar{
+    background-color: #320358;
+    margin-bottom: 24px;
+}
+.navbar a{
+    color: white;
+    font-weight: bold;
+}
+
+.tabel-penduduk{
+    font-size: 11px;
+}
+
+.tabel-penduduk button{
+    font-size: 11px;
+
+}

@@ -1,0 +1,172 @@
+@font-face {
+  font-family: 'UprightRegular';
+  src: url('../webfonts/Upright\ Regular.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'UprightOTF';
+  src: url('../webfonts/Upright.otf') format('opentype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+/*body {
+  overflow-x: hidden;
+  padding-top: 0;
+  background-color: #483d8b;
+  background-image: url("../images/16351647_rm222-mind-40.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-attachment: fixed;
+}*/
+
+.body{
+  overflow-x: hidden;
+  background-color: #18002c;
+}
+
+h1, h2, h3, h4{
+  font-family: 'UprightOTF';
+}
+
+label, p{
+  color: white;
+}
+
+.card-title h3{
+  font-size: 70px;
+}
+
+.container {
+  margin-top: 20px;
+}
+
+.btn {
+  color: white;
+  border: none;
+}
+
+.btn-primary {
+  background-color: #6a5acd;
+}
+
+.btn-success {
+  background-color: #32174d;
+}
+
+.btn-danger {
+  background-color: #b4a51d;
+}
+
+.btn-warning {
+  background-color: #8a2be2;
+}
+
+.btn-primary:hover {
+  background-color: #483d8b;
+  color: white;
+}
+
+.btn-success:hover {
+  background-color: #4b3075;
+}
+
+.btn-danger:hover {
+  background-color: #d4c62a;
+}
+
+.btn-warning:hover {
+  background-color: #241d45;
+}
+
+.modal-content {
+  border: none;
+  background-color: #32174d;
+}
+
+.modal-header,
+.modal-body,
+.modal-footer,
+.modal-footer a {
+  border: none;
+}
+
+.modal-header {
+  background-color: #6f42c1;
+  color: #fff;
+}
+
+.modal-title {
+  font-size: 24px;
+}
+
+.modal-body {
+  font-size: 18px;
+  color: #fff;
+}
+
+.form-center {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  margin: 0;
+}
+
+.card {
+  width: 80%;
+  margin: auto;
+  border: none;
+  border-radius: 20px;
+  box-shadow: 0 14px 16px rgba(100, 74, 133, 0.5);
+  background-color:white;
+}
+
+.card-body {
+  color: #241d45;
+}
+
+.card-footer{
+  background-color: #01002c;
+  border-radius: 60px;
+}
+
+.card-title {
+  background-color: #01002c;
+  color: #fff;
+  padding: 1rem;
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
+}
+
+.form-control {
+  font-weight: bold;
+  border: 2px solid #6a5acd;
+}
+
+.form-control:focus {
+  color: white;
+  background-color: #483d8b;
+  border-color: #32174d;
+  box-shadow: 0 0 20px rgba(138, 43, 226, 0.5);
+}
+
+.about-content {
+  padding: 30px;
+  background: #fff;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+  margin-bottom: 30px;
+}
+.about-section {
+  margin-bottom: 50px;
+}
+.about-section h4, .about-section p, .about-section ul {
+  color: #333 !important;
+}
+.about-section ul {
+  padding-left: 20px;
+}

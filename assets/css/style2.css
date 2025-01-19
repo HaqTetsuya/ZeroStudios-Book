@@ -1,0 +1,277 @@
+body {
+	overflow-x: hidden;
+	padding-top: 0;
+	background-color: #483d8b;
+	background-image: url("../../img/website/bg.webp");
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: bottom;
+	background-attachment: fixed;
+}
+
+.btn {
+	border: none;
+}
+
+/*.gradient-custom {
+	background: linear-gradient(to right, #00013b, #2c0c61, #5b1377, #9800b6);
+}*/
+
+* {
+	margin: 0px;
+	padding: 0px;
+	box-sizing: border-box;
+}
+
+body {
+	font-family: "Poppins", sans-serif;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	height: 100vh;
+	background-color: transparent;
+	font-size: 14px;
+	overflow: hidden;
+}
+
+.container {
+	width: 760px;
+	max-width: 100vw;
+	height: 480px;
+	position: relative;
+	overflow: hidden;
+}
+.container .forms-container {
+	position: relative;
+	width: 50%;
+	text-align: center;
+}
+.container .forms-container .card-form {
+	position: absolute;
+	width: 100%;
+	display: flex;
+	justify-content: center;
+	flex-direction: column;
+	height: 480px;
+	transition: all 0.5s ease-in;
+}
+.container .forms-container .card-form h2 {
+	font-size: 2rem;
+}
+.container .forms-container .card-form form {
+	display: flex;
+	flex-direction: column;
+	margin: 0px 30px;
+}
+.container .forms-container .card-form form input {
+	margin: 10px 0px;
+	border-bottom: 1px white;
+	padding: 15px;
+	border-radius: 5px;
+}
+.container .forms-container .card-form form button {
+	background: linear-gradient(to right, #00013b, #2c0c61, #5b1377, #9800b6);
+	outline: white;
+	padding: 5px;
+	margin-top: 5px;
+	border-radius: 5px;
+	color: #fff;
+	cursor: pointer;
+	font-size: 20px;
+}
+.container .forms-container .card-form form button:focus,
+.container .forms-container .card-form form button:hover {
+	outline: 1px solid #fff; /* Outline in white */
+	background: linear-gradient(to right, #1a1b5e, #472b87, #743a9e, #b32ee3);
+}
+.container .forms-container .card-form span {
+	margin: 10px 0px;
+}
+.container .forms-container .card-form.signup-form {
+	opacity: 0;
+	z-index: 1;
+	left: 200%;
+}
+.container .forms-container .card-form.signin-form {
+	opacity: 1;
+	z-index: 2;
+	left: 0%;
+}
+.container .intros-container {
+	position: relative;
+	left: 50%;
+	width: 50%;
+	text-align: center;
+}
+.container .intros-container .intro-control {
+	position: absolute;
+	width: 100%;
+	display: flex;
+	justify-content: center;
+	flex-direction: column;
+	height: 480px;
+	color: #fff;
+	transition: all 0.5s ease-in;
+}
+.container .intros-container .intro-control .intro-control__inner {
+	margin: 0px 30px;
+}
+.container .intros-container .intro-control button {
+	background: linear-gradient(to right, #00013b, #2c0c61, #5b1377, #9800b6);
+	border: none;
+	padding: 7px 30px;
+	border-radius: 50px;
+	color: #fff;
+	margin: 10px 0px;
+	cursor: pointer;
+}
+.container .intros-container .intro-control button:focus,
+.container .intros-container .intro-control button:hover {
+	outline: 1px solid #fff; /* Outline in white */
+	background: linear-gradient(to right, #1a1b5e, #472b87, #743a9e, #b32ee3);
+	transition: all 0.5s ease-in-out;
+}
+.container .intros-container .intro-control h3,
+.container .intros-container .intro-control p {
+	margin: 10px 0px;
+}
+.container .intros-container .intro-control.signin-intro {
+	opacity: 1;
+	z-index: 2;
+}
+.container .intros-container .intro-control.signup-intro {
+	opacity: 0;
+	z-index: 1;
+}
+
+.change .forms-container .card-form.signup-form {
+	opacity: 1;
+	z-index: 2;
+	transform: translateX(-100%);
+}
+.change .forms-container .card-form.signin-form {
+	opacity: 0;
+	z-index: 1;
+	transform: translateX(-100%);
+}
+.change .intros-container .intro-control {
+	transform: translateX(-100%);
+}
+.change .intros-container .intro-control #signin-btn {
+	background-color: #2563eb;
+}
+.change .intros-container .intro-control.signin-intro {
+	opacity: 0;
+	z-index: 1;
+}
+.change .intros-container .intro-control.signup-intro {
+	opacity: 1;
+	z-index: 2;
+}
+
+.btn:hover {
+	outline: white;
+}
+
+.form-control {
+	background: transparent;
+	border: none;
+	height: 40px;
+	color: white !important;
+	border: 1px solid transparent;
+	background: rgba(255, 255, 255, 0.08);
+	border-radius: 40px;
+	padding-left: 20px;
+	padding-right: 20px;
+	-webkit-transition: 0.3s;
+	-o-transition: 0.3s;
+	transition: 0.3s;
+}
+
+.form-control::-webkit-input-placeholder {
+	/* Chrome/Opera/Safari */
+	color: rgba(255, 255, 255, 0.8) !important;
+}
+
+.form-control:hover,
+.form-control:focus {
+	background: transparent;
+	outline: none;
+	-webkit-box-shadow: none;
+	box-shadow: none;
+	border-color: rgba(255, 255, 255, 0.4);
+}
+.form-control:focus {
+	border-color: rgba(255, 255, 255, 0.4);
+}
+
+.eye-icon {
+	cursor: pointer;
+	position: absolute;
+	right: 10px;
+	top: 50%;
+	transform: translateY(-50%);
+	z-index: 2;
+	color: white;
+}
+
+.form-group {
+	position: relative;
+}
+
+.checkbox-wrap {
+	display: block;
+	position: relative;
+	padding-left: 30px;
+	margin-bottom: 12px;
+	cursor: pointer;
+	font-size: 16px;
+	font-weight: 500;
+	-webkit-user-select: none;
+	-moz-user-select: none;
+	-ms-user-select: none;
+	user-select: none;
+}
+
+
+
+@media screen and (max-width: 480px) {
+	.container {
+		height: 100vh;
+		display: flex;
+		flex-direction: column;
+	}
+	.container .forms-container {
+		order: 2;
+		width: 100%;
+		height: 50vh;
+	}
+	.container .forms-container .card-form {
+		position: absolute;
+		height: 50vh;
+	}
+	.container .forms-container .card-form.signup-form {
+		left: 0%;
+		margin-top: 70px;
+	}
+	.container .intros-container {
+		order: 1;
+		width: 100%;
+		left: 0%;
+		height: 40vh;
+	}
+	.container .intros-container .intro-control {
+		position: absolute;
+		height: 40vh;
+	}
+
+	.change .forms-container .card-form.signup-form {
+		transform: translateX(0%);
+	}
+	.change .forms-container .card-form.signin-form {
+		transform: translateX(0%);
+	}
+	.change .intros-container .intro-control {
+		transform: translateX(0%);
+	}
+}
